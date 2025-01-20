@@ -12,8 +12,7 @@ void solve() {
     int dx, dy;
     std::cin >> dx >> dy;
     int nx = px + dx, ny = py + dy;
-    ans -= 2 * ((m - dx) + (m - dy));
-    ans += 4 * m;
+    ans += 2 * (dx + dy);
   }
 
   std::cout << ans << "\n";
